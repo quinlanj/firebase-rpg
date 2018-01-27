@@ -1,11 +1,9 @@
+import { AppLoading } from "expo";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { AppLoading, Constants } from "expo";
 import arrayFromObject from "./utils/arrayFromObject";
 import cacheAssetsAsync from "./utils/cacheAssetsAsync";
 import Files from "./Files";
 import Game from "./components/Game";
-import * as firebase from "firebase";
 
 export default class App extends React.Component {
   state = { assetsLoaded: false };
@@ -34,12 +32,3 @@ export default class App extends React.Component {
     return this.state.assetsLoaded ? <Game /> : <AppLoading />;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});

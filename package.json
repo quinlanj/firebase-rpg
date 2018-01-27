@@ -5,6 +5,9 @@
     "expo": "^25.0.0",
     "react": "16.2.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
-    "firebase": "^4.8.2"
+    "firebase": "^4.9.0",
+    "expo-three": "2.0.2",
+    "prop-types": "15.6.0",
+    "three": "0.88.0"
   }
 }
